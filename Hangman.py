@@ -40,9 +40,10 @@ while num_strikes > 0 and answer != WORD:
 
     guess = input("Guess: ").lower()
 
-    while len(guess)!=1:
+    while len(guess) != 1:
         print("You guessed more than one letter!")
         guess = input("Guess: ").lower
+        
     while guess not in alphabet:
         print("Guess was not a letter")
         guess = input("Guess: ").lower()
